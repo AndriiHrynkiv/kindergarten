@@ -10,7 +10,7 @@ var mainModule = (function () {
             contentBlock: document.getElementsByClassName("content")[0],
             navigationList: document.getElementsByClassName("expand-menu")[0],
             navigationItems: document.getElementsByClassName("list-item"),
-            allItems: document.getElementsByClassName("items"),
+            allItems: document.getElementsByClassName("content_section"),
             peopleList: document.getElementsByClassName("people-menu")[0],
             arrowImg: document.getElementsByClassName("arrow")[0],
             peopleItems: document.getElementsByClassName("people-list-item")
