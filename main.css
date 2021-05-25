@@ -52,11 +52,7 @@ ul, h1, li, h2 >p, a>p {
 }
 
 .expand-menu img {
-    position: relative;
-    display: block;
-    height: 60px;
-    top: 40%;
-    margin: auto;
+    display: none;
 }
 
 .expand-menu-open {
@@ -76,8 +72,6 @@ ul, h1, li, h2 >p, a>p {
     font-size: 16px;
     padding: 16px 16px 16px 21px;
 }
-
-
 
 .arrow {
     padding-top: 2px;
@@ -100,6 +94,27 @@ ul, h1, li, h2 >p, a>p {
     -o-background-size: 100%;
     background-size: 100%;
 }
+
+.content_main-background img{
+    display: block;
+    position: absolute;
+    width: 80%;
+    top: 20% ;
+    right: 10%;
+}
+
+.content_main-background {
+    display: none;
+}
+
+.content_main-item img {
+    width: 30px;
+    position: relative;
+    top: 32%;
+    right: 30px;
+}
+
+
 
 
 @media all and (min-width: 760px) {
@@ -158,7 +173,6 @@ ul, h1, li, h2 >p, a>p {
       top: 80px;
     }
 
-
     .content_main {
         display: flex;
         justify-content: center;
@@ -169,6 +183,7 @@ ul, h1, li, h2 >p, a>p {
 
     .content_main-background {
         position: absolute;
+        display: block;
         height: 100%;
         width: 100%;
         right:0;
@@ -176,6 +191,11 @@ ul, h1, li, h2 >p, a>p {
         background-color: #F0F8FF;
         opacity: 0.6;
     }
+
+    .content_main-background img{
+        display: none;
+    }
+    
 
     .content_main > div:last-child {
         margin-left: 250px;
