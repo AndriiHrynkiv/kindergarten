@@ -52,11 +52,7 @@ ul, h1, li, h2 >p, a>p {
 }
 
 .expand-menu img {
-    position: relative;
-    display: block;
-    height: 60px;
-    top: 40%;
-    margin: auto;
+    display: none;
 }
 
 .expand-menu-open {
@@ -77,8 +73,6 @@ ul, h1, li, h2 >p, a>p {
     padding: 16px 16px 16px 21px;
 }
 
-
-
 .arrow {
     padding-top: 2px;
     margin-left:30%;
@@ -88,7 +82,7 @@ ul, h1, li, h2 >p, a>p {
 
 .content{ 
     display: block;
-    height: 90%;  
+    height: 90%;
     z-index: -1;
 }
 
@@ -99,6 +93,40 @@ ul, h1, li, h2 >p, a>p {
     -webkit-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
+}
+
+.content_main {
+    display: flex;
+    flex-direction: column;
+}
+
+.content_main-background img{
+    display: block;
+    position: absolute;
+    width: 80%;
+    top: 20% ;
+    right: 10%;
+}
+
+.content_main-background {
+    height: 280px;
+}
+
+.content_main-item {
+    position: relative;
+    padding: 0 40px;
+    width: 100%;
+    border: 3px solid #F0F8FF;
+    border-bottom: none;
+    z-index: 4;
+    line-height: 1;
+}
+
+.content_main-item img {
+    position: absolute;
+    width: 57px;
+    left: 65%;
+    top: 30%;
 }
 
 
@@ -158,9 +186,9 @@ ul, h1, li, h2 >p, a>p {
       top: 80px;
     }
 
-
     .content_main {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         z-index: 2;
@@ -169,12 +197,17 @@ ul, h1, li, h2 >p, a>p {
 
     .content_main-background {
         position: absolute;
+        display: block;
         height: 100%;
         width: 100%;
         right:0;
         top: 80px;
         background-color: #F0F8FF;
         opacity: 0.6;
+    }
+
+    .content_main-background img{
+        display: none;
     }
 
     .content_main > div:last-child {
@@ -191,8 +224,6 @@ ul, h1, li, h2 >p, a>p {
         padding: 0 40px;
         width: 400px;
         border: 2px solid #fff;
-        z-index: 4;
-        line-height: 1;
     }
 
     .content_main-item p {
