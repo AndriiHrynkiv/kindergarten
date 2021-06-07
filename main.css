@@ -71,6 +71,7 @@ ul, h1, li, h2 >p, a>p {
     color: #4e4e4e;
     font-size: 16px;
     padding: 16px 16px 16px 21px;
+    font-family: 'ZCOOL KuaiLe', cursive;
 }
 
 .arrow {
@@ -80,10 +81,11 @@ ul, h1, li, h2 >p, a>p {
     height: 9px;
 }
 
-.content{ 
+.content {
     display: block;
     height: 90%;
     z-index: -1;
+    background-image: url("images/5.jpg");
 }
 
 .content_main-img {
@@ -93,6 +95,7 @@ ul, h1, li, h2 >p, a>p {
     -webkit-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
+    box-shadow: 0px 20px 19px 0 #F0F8FF;
 }
 
 .content_main {
@@ -130,6 +133,16 @@ ul, h1, li, h2 >p, a>p {
 }
 
 
+.content_main-item  h2{
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+
+.content_activities-list ul li img{
+    display: none;
+}
+
+
 @media all and (min-width: 760px) {
     body, ul, li, .people-block > p {
         padding: 0;
@@ -160,7 +173,9 @@ ul, h1, li, h2 >p, a>p {
     .expand-menu img {
         position: relative;
         margin: auto 60px;
+        height: 60px;
         top: 0;
+        display: block;
     }
 
     .expand-menu ul {
@@ -175,7 +190,7 @@ ul, h1, li, h2 >p, a>p {
     }
 
     .list-item:hover {
-        background-color: #F0F8FF;
+        background-color: rgba(241, 226, 242, 0.5);
     }
 
     .arrow {
@@ -224,6 +239,7 @@ ul, h1, li, h2 >p, a>p {
         padding: 0 40px;
         width: 400px;
         border: 2px solid #fff;
+        background-color: rgba(241, 226, 242, 0.5);
     }
 
     .content_main-item p {
@@ -239,6 +255,7 @@ ul, h1, li, h2 >p, a>p {
         position: absolute;
         top: 32%;
         right: 30px;
+        left: 75%;
     }
 
     .content_main-img {
@@ -255,10 +272,57 @@ ul, h1, li, h2 >p, a>p {
         text-align:justify;
         border: 2px solid #F0F8FF;
         font-size: 18px;
-        background-color: #f1e2f2;
+        background-color: rgba(241, 226, 242, 0.95);
         line-height: 2;
+        border-radius: 5%;
     }
     .content_section h2{
         text-align: center;
+        color: #3366ff;
+        font-family: 'ZCOOL KuaiLe', cursive;
+    }
+
+    .content_activities-list ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .content_activities-list ul li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content_activities-list ul li p {
+        font-size: 24px;
+        width: 300px;
+        left: 1;
+        height: 40px;
+        text-align: center;
+    }
+
+    .content_activities-list ul li img {
+        display: block;
+        width: 350px;
+        height: 250px;
+    }
+
+    .content_description-list ul {
+        list-style-image: url("images/checked.png");
+    }
+
+    .content_description-list li {
+        padding: 20px 40px;
+        margin: 10px 0;
+        border-radius: 20px;
+    }
+
+
+    .content_description-list li h5{
+        font-size: 20px;
+        margin: 0;
+        color: #3366ff;;
+        font-family: 'ZCOOL KuaiLe', cursive;
     }
 }
