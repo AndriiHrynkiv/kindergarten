@@ -6,11 +6,19 @@ body{
     display: flex;
     flex-direction: column;
     overflow: auto;
+    z-index: -1;
+    background-image: url("images/5.jpg");
 }
 ul, h1, li, h2 >p, a>p {
     padding: 0;
     margin: 0;
 }
+
+h2 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    text-align: center;
+}
+
 .header-block{
     position: fixed;
     width: 100%;
@@ -84,8 +92,6 @@ ul, h1, li, h2 >p, a>p {
 .content {
     display: block;
     height: 90%;
-    z-index: -1;
-    background-image: url("images/5.jpg");
 }
 
 .content_main-img {
@@ -103,6 +109,10 @@ ul, h1, li, h2 >p, a>p {
     flex-direction: column;
 }
 
+.content_main h2{
+    text-align: left;
+}
+
 .content_main-background img{
     display: block;
     position: absolute;
@@ -117,11 +127,20 @@ ul, h1, li, h2 >p, a>p {
 
 .content_main-item {
     position: relative;
-    padding: 0 40px;
+    padding: 10px 40px;
+    margin:0 0 20px 0;
     width: 100%;
     border: 3px solid #F0F8FF;
     border-bottom: none;
     z-index: 4;
+    line-height: 1;
+    background-color: rgba(241, 226, 242, 0.8);
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+.content_main-item p {
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 18px;
     line-height: 1;
 }
 
@@ -132,16 +151,73 @@ ul, h1, li, h2 >p, a>p {
     top: 30%;
 }
 
-
-.content_main-item  h2{
-    font-family: 'ZCOOL KuaiLe', cursive;
+.content_section {
+    border: 3px solid rgba(241, 226, 242);
+    background-color: rgba(240, 248, 255, 0.8);
+    padding: 0 20px;
+    margin-bottom: 40px;
 }
 
+.content_activities-list ul {
+    list-style-type: "\2713";
+    padding: 0 20px;
+}
 
 .content_activities-list ul li img{
     display: none;
 }
 
+.content_activities-list ul li p {
+    padding-left: 20px;
+    font-size: 18px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.content_benefits-list ul {
+    list-style: none;
+}
+
+.content_benefits-list li {
+    padding: 20px 25px;
+    margin: 0;
+    border-radius: 20px;
+    background-image: url('images/checked.png');
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    background-size: 50px auto;
+}
+
+.content_benefits-list li h5{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0 0 0 30px;
+    color: #3366ff;;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.content_benefits-list li p{
+    text-align: justify;
+    font-family: 'Baloo Tammudu 2', cursive;
+    line-height: 1;
+}
+
+.content_description-text {
+    text-align: justify;
+}
+
+
+.footer {
+    background-color: rgba(240,248,255, 0.95);
+}
+
+.footer_contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1;
+}
 
 @media all and (min-width: 760px) {
     body, ul, li, .people-block > p {
@@ -235,7 +311,7 @@ ul, h1, li, h2 >p, a>p {
 
     .content_main-item {
         position: relative;
-        height: 200px;
+        height: 220px;
         padding: 0 40px;
         width: 400px;
         border: 2px solid #fff;
@@ -249,6 +325,11 @@ ul, h1, li, h2 >p, a>p {
        width: 90%;
        text-align:justify;
     }
+
+    .content_main-item a {
+        color: #000;
+        display: block;
+     }
 
     .content_main-item img {
         width: 80px;
@@ -308,21 +389,13 @@ ul, h1, li, h2 >p, a>p {
         height: 250px;
     }
 
-    .content_description-list ul {
-        list-style-image: url("images/checked.png");
-    }
-
-    .content_description-list li {
-        padding: 20px 40px;
-        margin: 10px 0;
-        border-radius: 20px;
-    }
-
-
-    .content_description-list li h5{
+    .content_benefits-list li h5{
         font-size: 20px;
-        margin: 0;
-        color: #3366ff;;
-        font-family: 'ZCOOL KuaiLe', cursive;
+    }
+
+    .footer_contacts {
+        flex-direction: row;
+        margin: 50px 10%;
+        font-size: 24px;
     }
 }
