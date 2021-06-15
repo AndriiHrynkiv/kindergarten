@@ -21,12 +21,14 @@ var mainModule = (function () {
         domElements.headerBlock.classList.add('header-block-open-menu');
         domElements.expandMenu.classList.add('expand-menu-open');
         domElements.menuButton.classList.add('drop-btn-open');
+        domElements.contentBlock.classList.add('content_freeze');
     };
 
     function closeMenu() {
         domElements.headerBlock.classList.remove('header-block-open-menu');
         domElements.expandMenu.classList.remove('expand-menu-open');
         domElements.menuButton.classList.remove('drop-btn-open');
+        domElements.contentBlock.classList.remove('content_freeze');
     };
 
     function showHideMenu() {
